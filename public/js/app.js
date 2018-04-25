@@ -55020,23 +55020,10 @@ module.exports = camelize;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 
 
-/* Stateless component or pure component
- * { product } syntax is the object destructing
- */
 var Car = function Car(_ref) {
   var car = _ref.car;
 
 
-  var divStyle = {}
-  /*code omitted for brevity */
-
-
-  //if the props car is null, return Product doesn't exist
-  ;if (!car) {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { style: divStyle });
-  }
-
-  //Else, display the car data
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     { style: divStyle },

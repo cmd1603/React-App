@@ -1,20 +1,7 @@
 import React, { Component } from 'react';
- 
-/* Stateless component or pure component
- * { product } syntax is the object destructing
- */
+
 const Car = ({car}) => {
-    
-  const divStyle = {
-      /*code omitted for brevity */
-  }
- 
-  //if the props car is null, return Product doesn't exist
-  if(!car) {
-    return(<div style={divStyle}></div>);
-  }
-     
-  //Else, display the car data
+  
   return(  
     <div style={divStyle}> 
       <h2> {car.make} {car.model} </h2>
