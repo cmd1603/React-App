@@ -9,7 +9,6 @@ class Example extends Component {
   constructor() {
   
     super();
-    //Initialize the state in the constructor
     this.state = {
         cars: [],
         currentCar: null
@@ -45,19 +44,14 @@ class Example extends Component {
   }
 
   handleClick(car) {
-
-      //handleClick is used to set the state
       this.setState({currentCar:car});
-  
   }
 
    handleAddCar(car) {
      
     car.price = Number(car.price);
-    /*Fetch API for post request */
     fetch( 'api/cars/', {
         method:'post',
-        /* headers are important*/
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'

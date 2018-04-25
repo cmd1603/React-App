@@ -59,7 +59,6 @@ class AddCar extends Component {
           </label>
           <label> 
             Model: 
-            {/*On every keystroke, the handeInput method is invoked */}
             <input style={inputStyle} type="text" onChange={(e)=>this.handleInput('model',e)} />
           </label>          
           <label> 

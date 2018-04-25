@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
- 
-/* Stateless component or pure component
- * { product } syntax is the object destructing
- */
 const Car = ({car}) => {
     
   const divStyle = {
-      /*code omitted for brevity */
   }
  
   //if the props car is null, return Product doesn't exist
@@ -21,7 +16,6 @@ const Car = ({car}) => {
       <p> {car.description} </p>
       <h3> Status {car.availability ? 'Available' : 'Out of stock'} </h3>
       <h3> Price : ${car.price} </h3>
-      
     </div>
   )
 }
