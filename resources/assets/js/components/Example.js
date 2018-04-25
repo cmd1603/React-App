@@ -121,10 +121,6 @@ class Example extends Component {
 
 export default Example;
 
-/* The if statement is required so as to Render the component 
- * on pages that have a div with an ID of "root";  
- */ 
-
 if (document.getElementById('root')) {
     ReactDOM.render(<Example />, document.getElementById('root'));
 }
